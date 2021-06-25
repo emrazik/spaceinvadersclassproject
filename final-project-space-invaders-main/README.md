@@ -20,6 +20,11 @@ npm start
 3. Play game. Have fun. :space_invader:
 
 ## Contributing
-Created in collaboration with three other students in our Spring 2021 Web Development class.
+Created in collaboration with three other students in our Spring 2021 Web Development class. 
+Their github profiles:
+boslandj
+Starbuck5
+CodySpring33
+
 
 Pull requests and forks are welcome. For major changes, please open an issue first to discuss what you would like to change.
