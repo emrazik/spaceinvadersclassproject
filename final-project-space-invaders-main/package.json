@@ -1,0 +1,36 @@
+{
+  "name": "final-project-space-invaders",
+  "version": "1.0.0",
+  "description": "Final project of CS290 at OSU with group members. A web game rendition of atarisspace invaders.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "handlebars views/partials/scorepartial.handlebars -f public/scoretemplate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp21/final-project-space-invaders.git"
+  },
+  "keywords": [
+    "SpaceInvaders"
+  ],
+  "author": "Spring <springc@oregonstate.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp21/final-project-space-invaders/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp21/final-project-space-invaders#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "figlet": "^1.5.0",
+    "handlebars": "^4.7.7",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.9",
+    "nodemon": "^2.0.7",
+    "serve-favicon": "^2.5.0"
+  }
+}

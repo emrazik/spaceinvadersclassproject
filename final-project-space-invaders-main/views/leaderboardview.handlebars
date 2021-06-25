@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Space Invaders</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+  </head>
+  <header>
+    <nav class = "navbar">
+      <ul class = "navlist">
+        <li class = "navitem site-title"><a href = "/">Space Invaders</a></li>
+        <li class = "navitem leaderboard"><a href = "/leaderboard">Leaderboard</a></li>
+        <li class = "navitem leaderboard-image"><a href= "/leaderboard"><img src = "/images/leaderboard_icon.png" alt = "leaderboard-icon" width = "32px" height= "32px"></img></a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+      <h2 id = "leaderboard-label">Leaderboard</h2>
+      <div class = "leaderboard-table">
+        <table style="display: table">
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+          {{#each scores}}
+            {{> scorepartial}}
+          {{/each}}
+        </table>
+      </div>
+  </body>
+</html>

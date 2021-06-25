@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  background-color: #fff;
+  font-size: 48px;
+  font-family: 'VT323';
+  margin-bottom: 20px;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: -1px;
+  word-spacing: -8px;
+}
+
+.navitem {
+  display: inline-block;
+}
+
+.site-title {
+  padding-left: 16px;
+}
+
+.leaderboard {
+  float: right;
+  padding-right: 16px;
+}
+
+.leaderboard-image {
+  float: right;
+  padding-top: 4px;
+  padding-right: 2px;
+}
+
+.content-404 h1 {
+  font-family: 'VT323', monospace;
+  color: white;
+  text-align:center;
+  padding-top:100px;
+}
+
+canvas {
+  image-rendering: pixelated;
+  border-style: solid;
+  border-color: white;
+  display: block;
+  margin: auto;
+}
+
+#modal-backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.play-button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'VT323';
+  cursor: pointer;
+}
+
+#game-end-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 110;
+}
+
+.game-start {
+
+  display:block
+
+}
+
+.modal-dialog {
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  border: solid 4px white;
+}
+
+.modal-header {
+  text-align: center;
+  font-size: 32px;
+  word-spacing: -6px;
+}
+
+.modal-header h3 {
+  font-family: 'VT323';
+  position: center;
+  color: white;
+}
+
+.modal-body p {
+  font-family: 'VT323';
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.modal-close-button {
+  float: left;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 32px;
+  position: relative;
+  bottom: 54px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.leaderboard-input-element {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.twit-input-element label {
+  font-weight: 600;
+  flex: 1 75px;
+  margin-right: 10px;
+}
+
+.play-again-button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'VT323';
+  padding-right: 10px;
+  padding-top: 6px;
+  word-spacing: -6px;
+  cursor: pointer;
+}
+
+.save-score-button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'VT323';
+  padding-top: 6px;
+  word-spacing: -6px;
+  cursor: pointer;
+}
+
+#leaderboard-text-input1 {
+  outline: none;
+  resize: none;
+  background-color: black;
+  border: none;
+  color: white;
+  border-bottom: solid 2px white;
+  width: 48px;
+  height: 32px;
+  padding-top: 16px;
+  margin: 8px;
+  font-family: 'VT323';
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+#leaderboard-text-input2 {
+  outline: none;
+  resize: none;
+  background-color: black;
+  border: none;
+  color: white;
+  border-bottom: solid 2px white;
+  width: 48px;
+  height: 32px;
+  padding-top: 16px;
+  margin: 8px;
+  font-family: 'VT323';
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+#leaderboard-text-input3 {
+  outline: none;
+  resize: none;
+  background-color: black;
+  border: none;
+  color: white;
+  border-bottom: solid 2px white;
+  width: 48px;
+  height: 32px;
+  padding-top: 16px;
+  margin: 8px;
+  font-family: 'VT323';
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 4px white;
+  padding: 4px;
+}
+
+tr {
+  color: white;
+  font-family: 'VT323';
+  font-size: 48px;
+}
+
+td {
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+}
+
+#leaderboard-label {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'VT323';
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border: solid 4px white;
+  width: 33%;
+  padding: 4px;
+}
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Space Invaders</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8" defer></script>
+    <script src="scores.json" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <Script>
+      $(document).ready(function(){
+          $(".inputs").keyup(function () {
+              $this=$(this);
+              if ($this.val().length >=$this.data("maxlength")) {
+                if($this.val().length>$this.data("maxlength")){
+                  $this.val($this.val().substring(0,4));
+                }
+                $this.next(".inputs").focus();
+              }
+           });
+      });
+  </Script>
+  </head>
+  <body>
+    <header>
+      <nav class = "navbar">
+        <ul class = "navlist">
+          <li class = "navitem site-title"><a href = "#">Space Invaders</a></li>
+          <li class = "navitem leaderboard"><a href = "/leaderboard">Leaderboard</a></li>
+          <li class = "navitem leaderboard-image"><a href= "/leaderboard"><img src = "/images/leaderboard_icon.png" alt = "leaderboard-icon" width = "32px" height= "32px"></img></a></li>
+        </ul>
+        
+      </nav>
+    </header>
+    <canvas id="game-screen" width=600 height=600>
+      This browser doesn't appear to support the HTML canvas API
+    </canvas>
+
+
+      <div class = "modal-dialog" id="game-start">
+        <button type="button" class="play-button">PLAY?</button>
+      </div>
+      <div class="modal-body"><p>W-Shoot A-Left D-Right</p></div>
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="game-end-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3>Game Over</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class = "play-again-button">
+            <button type = "button" class = "play-again-button">Play Again</button>
+          </div>
+          
+          <div class="leaderboard-input-element">
+            <textarea id="leaderboard-text-input1" class="inputs" data-maxlength="1" maxlength="1"></textarea>
+            <textarea id="leaderboard-text-input2" class="inputs" data-maxlength="1" maxlength="1"></textarea>
+            <textarea id="leaderboard-text-input3" class="inputs" data-maxlength="1" maxlength="1"></textarea>
+          </div>
+          <p>Enter Your Initials<p>
+          <button type = "button" class = "save-score-button">Save Score</button>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

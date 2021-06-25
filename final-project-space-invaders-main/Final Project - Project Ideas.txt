@@ -1,0 +1,23 @@
+﻿Final Project Team and Ideas
+
+
+Names:
+
+
+Jonah Bosland/Boslandj@oregonstate.edu
+Charles Hayden/haydecha@oregonstate.edu
+Evan Mrazik/mrazike@oregonstate.edu
+Cody Spring/springc@oregonstate.edu 
+
+
+Idea:
+
+
+Our project idea that we have is to recreate an html5 version of the arcade game Space Invaders. For this game we will need to store the models used for the player and enemy ships. We plan to use Node.js as our server. We also need to track player inputs and keep track of high scores.
+
+
+We will store arcade-style (three letter) high scores in a database in the highscores tab.
+
+
+Rough Diagram:
+(Game screen screenshot from original game)
